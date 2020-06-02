@@ -1,0 +1,40 @@
+<div id="gorizNav" *ngIf="skud">
+  <div class="parent">
+    <div class="child">
+      <a routerLink="home/{{skud.id}}">
+        <h6 class="navigation__text">home {{skud.id}}</h6>>
+        <div class = "img">
+          <img src="../../assets/home.png">
+        </div>
+      </a>
+    </div>
+    <div class="child">
+      <a routerLink="cards/{{skud.id}}">
+        <h6 class="navigation__text">cards {{skud.id}}</h6>>
+        <div class = "img">
+          <img src="../../assets/card.png">
+        </div>
+      </a>
+    </div>
+    <div class="child">
+      <a routerLink="config/{{skud.id}}">
+        <h6 class="navigation__text">config {{skud.id}}</h6>
+        <div class = "img">
+          <img src="../../assets/config.png">
+        </div>
+      </a>
+    </div>
+
+    <div class="child">
+      <a routerLink="swipe/{{skud.id}}">
+        <h6 class="navigation__text">swipe {{skud.id}}</h6>
+        <div class = "img" >
+          <img src="../../assets/swipe.png">
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+

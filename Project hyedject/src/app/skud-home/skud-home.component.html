@@ -1,0 +1,55 @@
+<!-- <div id="home-door" *ngIf="doors">
+  <div class="button" *ngFor="let door of doors">
+    <button class="btn" (click)="isClicked(door)">{{door.doorName}}</button>
+    <span class="prebatton" *ngIf="door.doorStatus">Open {{door.doorName}}</span>
+  </div>
+</div>
+-->
+
+<div class="content">
+
+  <div class="head">
+    <div class="status__box">
+      <table>
+        <thead>
+        <tr>
+          <th>
+            <div>Status</div>
+          </th>
+          <th>
+            <div>Card id</div>
+          </th>
+          <th>
+            <div>Name</div>
+          </th>
+          <th>
+            <div>Time</div>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let swipe of swipeList">
+          <td>{{swipe.status}}</td>
+          <td>{{swipe.cardId}}</td>
+          <td>{{getName(swipe.cardId)}}</td>
+          <td>{{swipe.date.toLocaleDateString()}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="button__box">
+      <div class="btn__container" *ngFor="let door of doors">
+        <button class="btn" (click)="isClicked(door)">{{door.doorName}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="log__box">
+      <app-door-bar-chart></app-door-bar-chart>
+    </div>
+    <div class="statistic__box">Тут место для вашей рекламы)</div>
+  </div>
+
+</div>

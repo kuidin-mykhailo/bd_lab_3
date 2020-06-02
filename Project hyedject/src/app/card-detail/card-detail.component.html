@@ -1,0 +1,76 @@
+<div class="card-detail" *ngIf="cards">
+  <div class="content">
+    <a class="addCard-button" (click)="addCardBoolean = true" *ngIf="profile.isAdmin">ADD CARD</a>
+    <p class="usersinfo">Total Users: {{cards.length}}</p>
+    <input type="text" placeholder="Search" #seacrhBox (keydown.enter)="searchCards(seacrhBox.value, $event)">
+    <table>
+      <thead>
+      <tr>
+        <th>
+          <div (click)="sortByName()">
+            Card holder
+          </div>
+        </th>
+        <th>
+          <div (click)="sortByCardId()">
+            Card number
+          </div>
+        </th>
+        <th>
+          <div>Card date</div>
+        </th>
+        <th>
+          <div>Hours</div>
+        </th>
+        <th *ngIf="profile.isAdmin">Option</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let card of cards">
+          <td *ngIf="editId !== card.cardId" (dblclick)="setSelectedCard(card.skudId, card.id)">{{card.name}}</td>
+          <td *ngIf="editId !== card.cardId" (dblclick)="setSelectedCard(card.skudId, card.id)">{{card.cardId}}</td>
+          <td *ngIf="editId !== card.cardId" (dblclick)="setSelectedCard(card.skudId, card.id)">{{card.date.toLocaleDateString()}}</td>
+          <td *ngIf="editId !== card.cardId" (dblclick)="setSelectedCard(card.skudId, card.id)">{{card.hours.print()}}</td>
+
+
+          <td *ngIf="editId === card.cardId">
+              <input type="text" placeholder="Name" value="{{card.name}}" (keyup)="setCardName($event)"/>
+          </td>
+          <td *ngIf="editId === card.cardId">
+              <input type="text" placeholder="Card id" value="{{card.cardId}}" (keyup)="setCardId($event)"/>
+          </td>
+          <td *ngIf="editId === card.cardId">
+              <input type="text" placeholder="year-month-day" value="{{card.date.toLocaleDateString()}}" (keyup)="setCardDate($event)"/>
+          </td>
+          <td *ngIf="editId === card.cardId">
+              <input type="text" placeholder="h-min-sec" value="{{card.hours.print()}}" (keyup)="setCardHours($event)"/>
+          </td>
+        <td *ngIf="profile.isAdmin">
+          <button *ngIf="editId !== card.cardId" class="deleteButton" (click)="editStatus(card.cardId)">Edit</button>
+            <button *ngIf="editId === card.cardId" class="deleteButton" (click)="changeCard(card.cardId)">Save</button>
+          <button *ngIf="editId !== card.cardId" class="deleteButton" (click)="deleteCard(card.id)">Delete</button>
+            <button *ngIf="editId === card.cardId" class="deleteButton" (click)="editStatusNull()">Cancel</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <div id="addcard" *ngIf="addCardBoolean">
+      <form>
+        <p class="addCard-form">
+          <input type="text" placeholder="Name" value="TestCard" #cardName/>
+          <input type="text" placeholder="CardId" value="00000" #cardId/>
+          <input type="text" placeholder="Date" value="05.27.2020" #cardDate/>
+        </p>
+      </form>
+
+      <button class="addCard-add" (click)="addCard(cardName.value, cardId.value, cardDate.value)">Add</button>
+    </div>
+  </div>
+  <div style="background: white;
+    height: 100px;
+    margin-left: 5px;" *ngIf="setSelectedCard">
+  </div>
+</div>
+
+

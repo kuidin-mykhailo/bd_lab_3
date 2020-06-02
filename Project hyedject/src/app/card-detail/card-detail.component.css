@@ -1,0 +1,141 @@
+.card-detail {
+  text-align: center;
+  max-height: 67%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content {
+  margin: auto;
+  width: fit-content;
+}
+
+table {
+  border: 1px solid #eeeeee;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f6fa;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2%;
+}
+
+th {
+  font-weight: normal;
+  color: #0d0d0d;
+  border-bottom: 1px solid #eeeeee;
+  padding: 12px 75px;
+  background-color: #eeeeee;
+}
+td {
+  color: #0d0d0d;
+  padding: 2px 0;
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  height: 50px;
+}
+
+tr:hover{
+  background: #b33cff;
+  color: #000;
+}
+
+#addcard {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+
+/* button */
+
+button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+  
+.content a {
+  color: #fff;
+}
+
+.addCard-button {
+  align-content: center;
+  max-height: 5%;
+  width: 15%;
+  background-color: #3f51b5;
+  border: 1px solid #eeeeee;
+  padding: 9px 12px;
+  box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+.addCard-button:hover {
+  background-color: #37b1f4;
+  color: white;
+}
+.addCard-add {
+  width: 40%;
+  margin-left: 60%;
+  background-color: #37b1f4;
+  color: #fff;
+  border: 1px solid black;
+}
+
+/* form */
+input {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+form {
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  border-radius: 0px 0 10px 10px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.addCard-form label {
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease-out;
+}
+
+.deleteButton {
+  display: inline-block;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+  font-weight: 300;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  background-color: #3f51b5;;
+}
+.deleteButton:active{
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgb(84, 96, 167);
+  box-shadow: inset 0 -1px 1px rgba(241, 231, 231, 0.1), inset 0 1px 2px rgba(127, 123, 123, 0.3), inset 0 0 0 60px rgb(84, 96, 167);
+}
+.deleteButton:hover{
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgb(98, 109, 177);
+}
+
+

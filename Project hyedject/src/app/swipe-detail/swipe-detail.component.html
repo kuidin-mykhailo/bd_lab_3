@@ -1,0 +1,33 @@
+<div class="swipe-detail" >
+  <table>
+    <thead>
+    <tr>
+      <th>Record ID</th>
+      <th>Card ID</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Date</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="swipes">
+    <tr *ngFor="let swipe of swipes">
+      <td>{{swipe.recordId}}</td>
+      <td>{{swipe.cardId}}</td>
+      <td>{{getName(swipe.cardId)}}</td>
+      <td>{{swipe.status}}</td>
+      <td>{{swipe.date.toLocaleString()}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button (click)="addSwipeBoolean = true"> To swipe</button>
+  <div id="addswipe" *ngIf="addSwipeBoolean">
+    <ul>
+      <label id="cardId">card id</label>
+      <li><input value="1337" #cardId/></li>
+      <label id="staus">card id</label>
+      <li><input value="Allow In" #status/></li>
+    </ul>
+    <button (click)="addSwipe(cardId.value, status.value)">Add</button>
+  </div>
+</div>

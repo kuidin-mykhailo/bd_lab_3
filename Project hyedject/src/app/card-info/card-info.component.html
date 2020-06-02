@@ -1,0 +1,40 @@
+<div class="infoContent">
+  <div class="barGraph">
+    <div class="barMainContent">
+      <app-bar-chart></app-bar-chart>
+    </div>
+  </div>
+  <div class="mainInfoBlock" *ngIf="card">
+    <div class="block-content">
+      <div class="image-content" *ngIf="user">
+        <img src="{{user.imageUrl}}"/>
+      </div>
+      <div class="image-content" *ngIf="!user">
+        <img src="https://i.ytimg.com/vi/codEIyq6DVA/maxresdefault.jpg"/>
+        <div class="user__card__info">
+          <p class="user__card__name">{{card.name}}</p>
+          <p class="user__card__id">{{card.cardId}}</p>
+        </div>
+      </div>
+      <div class="user__border"></div>
+      <div class="user-info">
+        <div>
+          <img class="user__info__img" src="../../assets/user__data.png">
+          <p class="user__info__p">Card date:</p>
+          <p class="user__info__base">{{card.date}}</p>
+        </div>
+        <div>
+          <img class="user__info__img" src="../../assets/user__time.png">
+          <p class="user__info__p">Hours:</p>
+          <p class="user__info__base">{{card.hours.print()}}</p>
+        </div>
+        <div>
+          <img class="user__info__img" src="../../assets/user__lastActiom.png">
+          <p class="user__info__p">last action:</p>
+          <p class="user__info__base">~~~</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

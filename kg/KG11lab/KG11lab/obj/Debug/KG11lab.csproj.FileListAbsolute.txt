@@ -1,0 +1,15 @@
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.csprojAssemblyReference.cache
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\App.g.cs
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab_MarkupCompile.cache
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\MainWindow.baml
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\MainWindow.g.cs
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.g.resources
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.Properties.Resources.resources
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.csproj.GenerateResource.cache
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.csproj.CoreCompileInputs.cache
+C:\Users\plans\source\repos\KG11lab\KG11lab\bin\Debug\KG11lab.exe.config
+C:\Users\plans\source\repos\KG11lab\KG11lab\bin\Debug\KG11lab.exe
+C:\Users\plans\source\repos\KG11lab\KG11lab\bin\Debug\KG11lab.pdb
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.exe
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab.pdb
+C:\Users\plans\source\repos\KG11lab\KG11lab\obj\Debug\KG11lab_MarkupCompile.lref

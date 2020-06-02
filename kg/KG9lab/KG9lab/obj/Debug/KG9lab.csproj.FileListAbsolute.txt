@@ -1,0 +1,10 @@
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.csprojAssemblyReference.cache
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.Form1.resources
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.Properties.Resources.resources
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.csproj.GenerateResource.cache
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.csproj.CoreCompileInputs.cache
+C:\Users\plans\source\repos\KG9lab\KG9lab\bin\Debug\KG9lab.exe.config
+C:\Users\plans\source\repos\KG9lab\KG9lab\bin\Debug\KG9lab.exe
+C:\Users\plans\source\repos\KG9lab\KG9lab\bin\Debug\KG9lab.pdb
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.exe
+C:\Users\plans\source\repos\KG9lab\KG9lab\obj\Debug\KG9lab.pdb

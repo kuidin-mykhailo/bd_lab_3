@@ -1,0 +1,10 @@
+C:\Users\plans\source\repos\kglab6\kglab6\bin\Debug\kglab6.exe.config
+C:\Users\plans\source\repos\kglab6\kglab6\bin\Debug\kglab6.exe
+C:\Users\plans\source\repos\kglab6\kglab6\bin\Debug\kglab6.pdb
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.csprojAssemblyReference.cache
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.Form1.resources
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.Properties.Resources.resources
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.csproj.GenerateResource.cache
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.csproj.CoreCompileInputs.cache
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.exe
+C:\Users\plans\source\repos\kglab6\kglab6\obj\Debug\kglab6.pdb

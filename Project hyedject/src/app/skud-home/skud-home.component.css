@@ -1,0 +1,110 @@
+.content {
+  width: 100%;
+  min-height: 500px;
+  display: inline-grid;
+  overflow: auto;
+  margin-bottom: 6%;
+}
+
+.head {
+  width: inherit;
+  min-height: 250px;
+}
+
+.body {
+  width: inherit;
+  min-height: 100%;
+}
+
+
+.button__box {
+  width: 30%;
+  min-height: 200px;
+  background-color: #fff;
+  float: left;
+  margin: 3% 0 0 3%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.status__box {
+  width: 60%;
+  min-height: 200px;
+  background-color: #fff;
+  float: right;
+  margin: 3% 3% 0 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.log__box {
+  width: 60%;
+  min-height: 360px;
+  background-color: #fff;
+  float: left;
+  margin: 3% 0 0 3%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.statistic__box {
+  width: 30%;
+  min-height: 200px;
+  background-color: #ffffff;
+  float: right;
+  margin: 3% 3% 0 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* button style */
+.btn__container {
+  margin: 5% 0% 5% 0%;
+}
+
+.btn {
+  border: 1px solid #141212;
+  border-radius: .2em;
+  font-size: 1em;
+  outline: none;
+  display: block;
+  background: #3f51b5;
+  color: white;
+  width: 80%;
+  padding: 4% 0% 4% 0%;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 auto;
+  transition: background-color 0s linear 3s;
+}
+button:active {
+  background-color: #1eb104;
+  transition-delay: 0s;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f6fa;
+  border-radius: 2%;
+}
+
+th {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0d0d0d;
+  border-bottom: 1px solid #eeeeee;
+  padding: 5px 50px;
+  background-color: #eeeeee;
+}
+td {
+  color: #0d0d0d;
+  padding: 6px 0;
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}

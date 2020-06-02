@@ -1,0 +1,322 @@
+.logo {
+  float: left;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 25%;
+  box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+  position: relative;
+}
+
+.vertical_nav {
+  background-color: #ffffff;
+  border-top: 4px solid #f5f6fa;
+  position: relative;
+  display:flex;
+  width: 100%;
+  height: 88%;
+}
+
+/* buttons */
+
+.skuds {
+  list-style-type: none;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: #0d0d0d 3px;
+}
+
+li {
+  margin-left: 5%;
+  margin-top: 5%;
+  position: relative;
+  cursor: pointer;
+}
+
+.parrant {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-self: center;
+  min-height: 5%;
+  max-height: 10%;
+  border: #0d0d0d 2px;
+}
+
+#all {
+  display: flex;
+  justify-content: center;
+  float: left;
+  max-height: 80px;
+  margin-bottom: 5%;
+  background-color: #f5f6fa;
+}
+
+#all:hover{
+  color: #3f51b5;
+  background-color: #9e9e9e;
+  left: .1em;
+}
+
+.status {
+  max-width: 10%;
+  min-width: 5%;
+}
+
+.skudPanel {
+  width: 100%;
+  max-width: 100%;
+  min-width: 30%;
+  height: 60px;
+  text-align: center;
+}
+
+.div3 {
+  max-width: 20%;
+  text-align: right;
+  border-radius: 0 6px 6px 0;
+}
+
+/*.badge {*/
+/*  min-width: 10%;*/
+/*  display: inline-block;*/
+/*  color: white;*/
+/*  padding: 26px 14px 26px 14px;*/
+/*  background-color:#3f51b5;*/
+/*  position: relative;*/
+
+/*  border-radius: 4px 0 0 4px;*/
+/*}*/
+
+.delete {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 31px 16px 34px 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+.delete:hover {
+  background-color: #323264;
+}
+
+/*.addButton {*/
+/*  width: 50%;*/
+/*  background-color: #3f51b5;*/
+/*  color: #fff;*/
+/*  padding: 10px 15px;*/
+/*  border: 1px solid black;*/
+/*  padding-top: 5% ;*/
+
+/*}*/
+
+/*.addButton:hover {*/
+/*  background-color: #860099;*/
+/*}*/
+
+header {
+  color: white;
+  background: #3f51b5;
+  width: 100%;
+  height: 6.5%;
+}
+
+.headerBlock {
+  color: white;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.image-content {
+  display: flex;
+}
+
+.img__big {
+  margin: 20% auto auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #4b30b5;
+  padding: 5px;
+}
+
+.img__small {
+  display: none;
+  margin: 20% auto auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #4b30b5;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.user-info {
+  text-align: center;
+  margin:20px auto 0 auto;
+  font-size: 24px;
+  color: #4b30b5;
+}
+
+.mainWindow {
+position: relative;
+height: 100%;
+width: 100%;
+overflow: auto;
+}
+
+body {
+display: flex;
+position: relative;
+
+}
+
+.sidebar {
+height: 100%;
+min-width: 10%;
+max-width: 17%;
+position: relative;
+}
+
+.auth img{
+margin-right: 50px;
+
+}
+.icon {
+float: left;
+margin-left: 3%;
+}
+.sidebar {
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.lock{
+height: 40px;
+width: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  background: #35ee21;
+  height: 10px;
+  width: 10px;
+  float: right;
+  margin: 0 5px 0 0;
+}
+
+.skud__name {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  top:  calc(50% - 11px);
+}
+
+.skud__arr {
+  background-color: #ffffff;
+  border: 2px solid rgba(110, 108, 122, 0.63);
+  padding: 5px 0 5px 5px;
+}
+
+
+
+
+.button{
+  margin-right: 15px;
+  float: left;
+}
+
+.addButton img{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+
+}
+.addButton{
+  background: white;
+  outline: none;
+}
+button:active,button:focus{
+  outline: none !important;
+}
+button::-moz-focus-inner{
+  border: 0 !important;
+}
+.addButton:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+
+.skud__button {
+  margin-left: calc(50% - (50px + 21px));
+  margin-top: 15px;
+}
+
+.addNewSkud {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 240px;
+  margin: -120px 0 0 -175px;
+  background: #f0f0f0;
+}
+
+
+.contact__table {
+  margin: 15px;
+  text-align: left;
+  color: #3f51b5;
+}
+
+
+@media (max-width: 1600px) {
+  .img__small {
+    display: block;
+  }
+
+  .img__big {
+    display: none;
+  }
+
+  .user-info {
+    font-size: 16px;
+  }
+
+  .lock {
+    height: 30px;
+  }
+
+ /* .addButton {
+    height: 35px;
+    width: 35px;
+  }*/
+
+  .button {
+    margin-right: 5px;
+  }
+
+  .skud__button {
+    margin-left: calc(50% - 51px);
+    margin-top: 5px;
+  }
+
+  .addButton img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .icon__skud {
+    height: 30px;
+  }
+
+  .auth img {
+    margin: 0 50px 0 0;
+  }
+
+  .skud__arr {
+    border: 1px solid rgba(110, 108, 122, 0.63);
+  }
+}

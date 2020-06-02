@@ -1,0 +1,103 @@
+<!--<button class="button button-primary" (click)="subscribeToNotifications()">-->
+<!--  Subscribe-->
+<!--</button>-->
+<header>
+  <div class="headerBlock">
+    <div class="auth">
+      <p>
+        <a href="#" class="icon"><img class="icon__skud" src="../../assets/sskud.png" alt="sskud" width="auto" height = "50" ></a>
+        <a (click)="subscribeToNotifications()" class="ik"><img src="../../assets/bell.png" alt="bell" width="auto" height = "30"></a>
+        <a (click)="logout()" class="ik"><img src="../../assets/logout.png" alt="logout" width="auto" height = "30" vspace="10"></a>
+      </p>
+      <h4>{{userDetails}}</h4>
+    </div>
+  </div>
+</header>
+
+<body *ngIf="!addButtonStatus">
+<div class="sidebar">
+  <div *ngIf="user" class="logo">
+    <div class="image-content">
+      <img class="img__big" src="{{user.imageUrl}}"/>
+      <img class="img__small" src="{{user.imageUrl}}"/>
+    </div>
+    <div class="user-info">
+      <p>{{user.name}} {{user.surname}}</p>
+    </div>
+  </div>
+  <div class="vertical_nav">
+    <ul class="skuds">
+
+      <li *ngFor="let skud of skuds"
+          [class.selected]="skud === selectedSkud"
+          (click)="onSelect(skud)">
+
+          <div class="skud__arr">
+              <img class="lock" src="../../assets/lock.png">
+              <a class="skud__name">{{skud.name}}</a>
+              <div class="circle"></div>
+          </div>
+      </li>
+
+
+      <div class="parent skud__button">
+
+        <div class="button">
+          <button type="button" class="addButton" (click)="addButton()" *ngIf="profile.isAdmin"><img src="../../assets/add.png"></button>
+        </div>
+
+        <div>
+          <button type="button" class="addButton refreshButton" (click)="getSkuds()"><img src="../../assets/refresh.png"></button>
+        </div>
+
+      </div>
+
+    </ul>
+  </div>
+
+</div>
+<div class="mainWindow">
+  <app-skud-navigation [skud]="selectedSkud">
+  </app-skud-navigation>
+  <router-outlet></router-outlet>
+</div>
+</body>
+
+
+
+<div class="addNewSkud" *ngIf="addButtonStatus">
+
+  <table class="contact__table">
+    <tr>
+      <th for="skudNameInput">Name:</th>
+      <td><input id="skudNameInput" #skudName/></td>
+    </tr>
+    <tr>
+      <th for="deviceNumberInput">Device number:</th>
+      <td><input id="deviceNumberInput" #deviceNumber/></td>
+    </tr>
+    <tr>
+      <th for="driverInput">Driver version:</th>
+      <td><input id="driverInput" #driverVersion/></td>
+    </tr>
+    <tr>
+      <th for="ipInput">IP:</th>
+      <td><input id="ipInput" #ip/></td>
+    </tr>
+
+
+    <tr>
+      <th for="subInput">SubnetMask:</th>
+      <td><input name="subInput" id="subInput" #subnetMask/></td>
+    </tr>
+    <tr>
+      <th for="gatewayInput">Gateway:</th>
+      <td><input id="gatewayInput" #gateway/></td>
+    </tr>
+  </table>
+  <button class="addButton"
+          (click)="addNewSkud(skudName.value, deviceNumber.value, driverVersion.value, ip.value, subnetMask.value, gateway.value)">
+    Add
+  </button>
+  <button class="addButton" (click)="addButtonStatus=false">Cancel</button>
+</div>
