@@ -34,7 +34,7 @@
     "jquery": "^3.4.1",
     "keycloak-angular": "^7.2.0",
     "keycloak-js": "^9.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ngx-take-until-destroy": "latest",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
